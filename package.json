@@ -1,0 +1,45 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https:///wredzio.github.io/happy/",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "@types/jest": "24.0.15",
+    "@types/node": "12.0.12",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "bootstrap": "^4.3.1",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-countdown-now": "^2.1.1",
+    "react-dom": "^16.8.6",
+    "react-pose": "^4.0.8",
+    "react-scripts": "3.0.1",
+    "typescript": "3.5.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html --public-url /",
+    "build": "parcel build ./src/index.html --out-dir ./build --public-url ./ --no-cache",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
